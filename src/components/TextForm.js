@@ -15,12 +15,6 @@ export default function TextForm(props) {
         setText(newText);
         props.showAlert("Converted to lowercase!", "success")
     };
-    // const handleSenClick = () => {
-    //     let newText = text.toLowerCase().replace(/(^\s*\w|[\.\!\?]\s*\w)/g, function(c) {
-    //         return c.toUpperCase()
-    //     });
-    //     setText(newText);
-    // }
     const handleSenClick = () => {
         let newText = text.toLowerCase();
         let sentences = newText.split('. '); // spliting the textarea into sentences
